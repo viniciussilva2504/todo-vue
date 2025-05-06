@@ -1,15 +1,14 @@
-<script setup>
-    const props = defineProps(['tarefasPendentes']);
-</script>
+    <script setup>
+    const props = defineProps({
+    tarefasPendentes: Number
+    });
+    </script>
 
-
-
-
-<template>
-    <header class="p-5 mb-4 bg-light ronded-3">
+    <template>
+    <header class="p-5 mb-4 bg-light rounded-3">
         <h1>Minhas Tarefas</h1>
         <p>
-        Você possui {{ props.tarefasPendentes}} tarefas pendentes
+        Você possui {{ tarefasPendentes }} tarefas pendentes
         </p>
     </header>
-</template>
+    </template>
